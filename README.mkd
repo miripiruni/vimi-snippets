@@ -1,0 +1,4 @@
+Vimi snippets for Snipmate
+--------------------------
+
+It's just my XSLT & CSS snippet for Vimi.
