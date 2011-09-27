@@ -1,0 +1,36 @@
+snippet mist
+	<mist>
+		<method>${1}</method>
+		<param type="${2}">${3}</param>
+		${4}
+	</mist>
+snippet method
+	<method>${1}</method>
+snippet param
+	<param type="${1}">${2}</param>
+snippet guard
+	<guard>${1}</guard>
+snippet http
+	<http tag="${1}" timeout="${2}" threaded="yes" id="${3}">
+		<method>${4}</method>
+		<param type="String">${5}</param>
+		${6}
+	</http>
+snippet xpath
+	<xpath expr="${1}" result="${2}" delim="${3}"/>
+snippet lua
+	<lua>
+		<![CDATA[
+		${1}
+		]]>
+	</lua>
+snippet sh
+	xscript.state:has(${1})${2}
+snippet sss
+	xscript.state:setString(${1})${2}
+snippet sg
+	xscript.state:get(${1})${2}
+snippet rh
+	xscript.request:hasArg(${1})${2}
+snippet rg
+	xscript.request:getArg(${1})${2}
